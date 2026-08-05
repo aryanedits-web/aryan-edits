@@ -1,0 +1,24 @@
+<DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aryan Edits</title>
+<style>
+body{margin:0;font-family:Arial;background:#0b1020;color:#fff}
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#111,#1b4d7a);animation:bg 8s infinite alternate}
+@keyframes bg{from{filter:hue-rotate(0)}to{filter:hue-rotate(45deg)}}
+h1{font-size:56px;opacity:0;animation:fade 1s forwards}
+p,.btn{opacity:0;animation:fade 1s .4s forwards}
+@keyframes fade{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.btn{background:#00d4ff;color:#000;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:bold}
+section{padding:60px 10%;display:grid;gap:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#17203a;padding:20px;border-radius:14px;transition:.3s}
+.card:hover{transform:translateY(-8px) scale(1.03)}
+footer{text-align:center;padding:30px;background:#111}
+</style></head><body>
+<header><h1>Aryan Edits</h1><p>Professional Graphic Design & Video Editing</p><a class="btn" href="https://wa.me/919028306947">WhatsApp Now</a></header>
+<section><h2>Services</h2><div class="cards">
+<div class="card">Logo Design</div><div class="card">Thumbnail Design</div><div class="card">Social Media Posts</div><div class="card">Video Editing</div><div class="card">Brand Identity</div><div class="card">Posters & Banners</div></div></section>
+<section><h2>Contact</h2><p>📞 9028306947<br>✉️ aryandeshmukh073@gmail.com</p></section>
+<footer>© 2026 Aryan Edits</footer></body></html>'''
+path="/mnt/data/Aryan_Edits_Professional_Website.html"
+Path(path).write_text(html,encoding="utf-8")
+print(path)
